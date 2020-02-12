@@ -20,27 +20,35 @@ const ButtonElement = styled.a`
   font-weight: 700;
 `
 
-interface IProps {
+interface IButtonProps {
   href?: string;
   target?: string;
   display?: string;
   content: string;
+  onOrderClick: () => void;
 }
 
 interface IButtonWrapper  {
   display?:  string;
 }
 
-export const Button = (props: IProps) => {
+export const Button = (props: IButtonProps) => {
   const {
     href,
     target,
     display,
-    content
+    content,
+    onOrderClick
   } = props;
   return(
     <ButtonWrapper display={display}>
-      <ButtonElement href={href || '#'} target={target}>{content}</ButtonElement>
+      <ButtonElement
+        onClick={onOrderClick}
+        href={href || '#'}
+        target={target}
+      >
+        {content}
+      </ButtonElement>
     </ButtonWrapper>
   )
 }
