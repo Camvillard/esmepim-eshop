@@ -1,5 +1,8 @@
-export interface ILandingProps {}
+export interface ILandingProps {
+  onOrderClick: () => void;
+}
 
 export interface ILandingState {
-  orderInitiated: boolean;
+  // orderInitiated: boolean;
+  userEmail: string;
 }

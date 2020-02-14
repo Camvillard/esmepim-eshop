@@ -14,14 +14,20 @@ export const LandingContainer = styled.div`
 
 export const LandingHeader = styled.div`
   margin-bottom: 4vh;
+  padding: 0 24px;
 `;
 
 export const LandingText = styled.p`
-  margin-top: -62px;
-  padding: 0 24px;
+  // margin-top: -62px;
+  // padding: 0 24px;
 `;
 
 export const LandingCTAContainer = styled.div`
   background: ${pink};
   padding: 24px 24px 120px;
+`;
+
+export const LandingSubtitle = styled.h3`
+  text-transform: uppercase;
+  font-size: 1.4rem;
 `;

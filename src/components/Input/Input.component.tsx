@@ -12,11 +12,14 @@ const {
   darkGray
 } = themeColors;
 
-export const Input = () => {
+export const Input = (props: any) => {
+  const {
+    onInputBlur
+  } = props;
   return(
     <InputComponent>
       <LabelElement>adresse email :</LabelElement>
-      <InputElement />
+      <InputElement onBlur={onInputBlur} />
     </InputComponent>
   )
 }
