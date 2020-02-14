@@ -43,7 +43,7 @@ export const Button = (props: IButtonProps) => {
   return(
     <ButtonWrapper display={display}>
       <ButtonElement
-        onClick={onOrderClick}
+        onClick={() => onOrderClick()}
         href={href || '#'}
         target={target}
       >

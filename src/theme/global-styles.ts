@@ -21,7 +21,6 @@ export const Accent = styled.p`
 `;
 
 export const GlobalStyle = createGlobalStyle`
-  @import url("https://use.typekit.net/aep8mdo.css");
 
   :root {
     font-size: 62.5%;
