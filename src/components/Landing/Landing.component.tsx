@@ -38,7 +38,9 @@ export class Landing extends Component<ILandingProps, ILandingState> {
                 Je suis Esme, et je fais des gâteaux parce que ça rend les gens heureux. On me demande souvent de rassembler mes recettes dans un livre : c'est maintenant chose faite.
                 Les fonds récoltés à l'achat de ce livre seront reversés à une (ou plusieurs !) association qui oeuvre pour un monde meilleur : scolariation des enfants, par exemple.
                 La participation financière est tout à fait libre, et vous recevrez un email avec le livre en PDF suite à l'achat.
-      
+              </LandingText>
+              <LandingText>
+                voir le sommaire du livre
               </LandingText>
             </LandingHeader>
           
