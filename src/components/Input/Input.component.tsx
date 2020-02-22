@@ -1,25 +1,31 @@
 import React, { Fragment } from 'react';
 import { InputElement, LabelElement, InputComponent } from './Input.ui';
-import { themeColors } from '../../theme/theme-variables';
+// import { themeColors } from '../../theme/theme-variables';
+import { IInputProps } from './Input.type';
 
-const {
-  pink,
-  blue,
-  green,
-  lightGray,
-  mediumGray,
-  gray,
-  darkGray
-} = themeColors;
+// const {
+//   pink,
+//   blue,
+//   green,
+//   lightGray,
+//   mediumGray,
+//   gray,
+//   darkGray
+// } = themeColors;
 
-export const Input = (props: any) => {
+export const Input = (props: IInputProps) => {
   const {
-    onInputBlur
+    onInputBlur,
+    placeholder,
+    label
   } = props;
   return(
     <InputComponent>
-      <LabelElement>adresse email :</LabelElement>
-      <InputElement onBlur={onInputBlur} />
+      <LabelElement>{label}</LabelElement>
+      <InputElement
+        onBlur={onInputBlur}
+        placeholder={placeholder}
+      />
     </InputComponent>
   )
 }

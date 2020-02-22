@@ -20,6 +20,21 @@ const ButtonElement = styled.a`
   font-weight: 700;
 `
 
+export const FormButton = styled.button`
+  background: none;
+  border: none;
+  font-family: ${futuraFont};
+  color: ${darkGray};
+  font-size: 1.8rem;
+  border-bottom: 2px solid ${darkGray};
+  padding: 0;
+  padding-bottom: 4px;
+  font-weight: 700;
+  display: block;
+  margin: 8px auto 0;
+  margin-right: 0;
+`
+
 interface IButtonProps {
   href?: string;
   target?: string;
