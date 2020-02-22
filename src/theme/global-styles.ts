@@ -126,6 +126,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+
   @media (min-width: ${mdScreen}) {
 
     h1 {

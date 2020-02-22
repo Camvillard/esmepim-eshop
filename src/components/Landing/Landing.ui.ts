@@ -13,6 +13,8 @@ export const LandingContainer = styled.div`
 `;
 
 export const LandingHeader = styled.div`
+  position: relative;
+  z-index: 3;
   margin-bottom: 4vh;
   padding: 0 24px;
 `;
@@ -24,7 +26,7 @@ export const LandingText = styled.p`
 
 export const LandingCTAContainer = styled.div`
   background: ${pink};
-  padding: 24px 24px 120px;
+  padding: 24px 24px 48px;
 `;
 
 export const LandingSubtitle = styled.h3`

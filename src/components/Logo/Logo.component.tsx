@@ -11,6 +11,9 @@ interface ILogoWrapperProps {
 }
 
 const LogoWrapper = styled.div`
+  position: relative;
+  top: 50px;
+  z-index: -1;
   padding: ${(props: ILogoWrapperProps) => props.padding || '0'};
 `
 
