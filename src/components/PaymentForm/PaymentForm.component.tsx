@@ -91,7 +91,7 @@ const Payment = (props: IPaymentProps) =>  {
       </PaymentHeader>
       
       <PaymentFormElement
-        onSubmit={() => submitOrder(props, setProcessOrderStatus)}
+        onSubmit={(e:any) => submitOrder(e,props, setProcessOrderStatus)}
       >
           <Label>
             numéro de carte :
@@ -120,7 +120,8 @@ const Payment = (props: IPaymentProps) =>  {
 }
 
 
-const submitOrder = async (props: any, setProcessOrderStatus: any) => {
+const submitOrder = async (e:any, props: any, setProcessOrderStatus: any) => {
+  e.preventDefault()
   setProcessOrderStatus(true)
   const { amount, userEmail, setOrderSuccess } = props;
   const baseUrl = process.env.NODE_ENV === 'development' ? `http://localhost:3001/api/v1/orders` : ''
