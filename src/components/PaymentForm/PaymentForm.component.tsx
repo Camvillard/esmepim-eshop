@@ -124,7 +124,7 @@ const submitOrder = async (e:any, props: any, setProcessOrderStatus: any) => {
   e.preventDefault()
   setProcessOrderStatus(true)
   const { amount, userEmail, setOrderSuccess } = props;
-  const baseUrl = process.env.NODE_ENV === 'development' ? `http://localhost:3001/api/v1/orders` : ''
+  const baseUrl = process.env.NODE_ENV === 'development' ? `http://localhost:3001/api/v1/orders` : 'https://esmepim-api.herokuapp.com/api/v1/orders'
   const chargeToken = await props.stripe.createToken({name: `id : ${userEmail}`})
   const data =  {
     user_email: userEmail,
