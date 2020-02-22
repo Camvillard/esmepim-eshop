@@ -154,7 +154,7 @@ export const GlobalStyle = createGlobalStyle`
     }
   
     p, li, em, a {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   } 
 
@@ -185,12 +185,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     p, li, em, a {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   
     p.accent-text,
     .accent-text {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   } 
 

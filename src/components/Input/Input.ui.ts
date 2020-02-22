@@ -27,6 +27,9 @@ export const InputComponent = styled.div`
 export const LabelElement = styled.label`
   color: ${darkGray};
   font-size: 1.4rem;
+  @media (min-width: 1024px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const InputElement = styled.input`
@@ -35,4 +38,21 @@ export const InputElement = styled.input`
   border-bottom: 2px solid ${darkGray};
   height: 3.2rem;
   flex-grow: 1;
+  font-size: 1.4rem;
+  color: ${darkGray};
+  font-family: ${futuraFont};
+  padding-left: 4px;
+  &:hover {
+    background: ${darkGray};
+    color: white;
+  }
+  &:focus {
+    outline: none;
+    background: ${darkGray};
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.8rem;
+  }
 `;

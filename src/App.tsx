@@ -30,7 +30,6 @@ const App = () => {
               amount={amount}
             />
             :
-            <Fragment>
               <Landing
                 userEmail={userEmail}
                 amount={amount}
@@ -42,7 +41,6 @@ const App = () => {
                 orderSuccess={orderSuccess}
                 setOrderSuccess={() => setOrderSuccess(true)}
               />
-            </Fragment>
           }
           <ContactLine>pour toute question : allo@esmepim.com</ContactLine>
           </FullContainer>

@@ -26,16 +26,20 @@ const elementStyles = {
   base: {
     fontWeight: 400,
     fontFamily: firaFont,
-    fontSize: '14px',
+    fontSize: '16px',
     fontSmoothing: 'antialiased',
     lineHeight: '24px',
     backgroundColor: 'white',
     color: darkGray,
+
+    '@media (min-width: 1024px)': {
+      fontSize: '2rem',
+      lineHeight: '40px',
+    },
     
     ':focus': {
       color: 'white',
       backgroundColor: darkGray,
-      
     },
     
     '::placeholder': {
@@ -108,7 +112,7 @@ const Payment = (props: IPaymentProps) =>  {
         </PaymentGrid>
 
           <FormButton>
-            {processOrderStatus ? 'en attente  de paiement' : 'valider la commande'}
+            {processOrderStatus ? 'en attente de paiement' : 'payer la commande'}
           </FormButton>
       </PaymentFormElement>
     </Fragment>
