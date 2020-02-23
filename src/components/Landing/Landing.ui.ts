@@ -24,7 +24,7 @@ export const LandingHeader = styled.div`
   padding: 0 24px;
   @media (min-width: 1024px) {
     width: 62%;
-    padding-bottom: 12vh;
+    padding: 0 40px 12vh;
     margin-bottom: 0;
   }
 `;

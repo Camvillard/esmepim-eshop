@@ -1,5 +1,5 @@
 const blue = `#74808D`;
-const pink = `#E0C1C3`;
+const pink = `#DCA5A5`;
 const green = `#748F89`;
 
 const lightGray = `#D7D7D7`;

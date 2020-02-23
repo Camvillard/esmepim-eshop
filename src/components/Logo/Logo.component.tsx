@@ -15,6 +15,15 @@ const LogoWrapper = styled.div`
   top: 50px;
   z-index: -1;
   padding: ${(props: ILogoWrapperProps) => props.padding || '0'};
+  width: 260px;
+  svg {
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 1024px) {
+    width: 400px;
+    top: 80px;
+  }
 `
 
 export const Logo = (props: ILogoProps) => {

@@ -42,15 +42,16 @@ export const InputElement = styled.input`
   color: ${darkGray};
   font-family: ${futuraFont};
   padding-left: 4px;
+  margin-left: 12px;
   &:hover {
-    background: ${darkGray};
-    color: white;
+    color: ${darkGray};
+    border: 2px solid ${darkGray};
   }
   &:focus {
     outline: none;
     background: ${darkGray};
     color: white;
-    border-bottom: 2px solid white;
+    border: none;
   }
   @media (min-width: 1024px) {
     font-size: 1.8rem;
