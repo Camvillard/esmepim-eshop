@@ -9,6 +9,7 @@ import { ILandingProps, ILandingState } from './Landing.type'
 import { validateEmail } from '../../helpers/email.helper'
 
 import Payment from '../PaymentForm/PaymentForm.component';
+import { ContactLine } from '../Container/Container.ui'
 
 const {
   pink
@@ -63,6 +64,9 @@ export class Landing extends Component<ILandingProps, ILandingState> {
                     content={'commander le livre'}
                     onOrderClick={this.orderBook}
                   />
+
+                  <ContactLine>pour toute question : allo@esmepim.com</ContactLine>
+
                 </Fragment>
               }
 

@@ -11,9 +11,8 @@ export const FullContainer = styled.div`
 
 export const ContactLine = styled.p`
   color: white;
-  margin: 0;
+  margin: 24px 0 0;
+  text-align: right;
   font-size: 12px;
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
+  width: 100%;
 `;

@@ -36,8 +36,9 @@ export const LandingText = styled.p`
 
 export const LandingCTAContainer = styled.div`
   background: ${pink};
-  padding: 24px 24px 48px;
+  padding: 24px 24px 12px;
   @media (min-width: 1024px) {
+    padding: 24px 24px 48px;
     flex-grow: 1;
     height: 100vh;
     display: flex;

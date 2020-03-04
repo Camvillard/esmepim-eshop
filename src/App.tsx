@@ -42,7 +42,6 @@ const App = () => {
                 setOrderSuccess={() => setOrderSuccess(true)}
               />
           }
-          <ContactLine>pour toute question : allo@esmepim.com</ContactLine>
           </FullContainer>
         </Elements>
       </StripeProvider>
