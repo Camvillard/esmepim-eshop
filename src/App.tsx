@@ -20,7 +20,7 @@ const App = () => {
   const [orderSuccess, setOrderSuccess] = useState(false);
 
   return (
-    <StripeProvider apiKey="pk_test_DLSemLt0vZFDDXgmjpXL4DV300khZEsec3">
+    <StripeProvider apiKey="pk_live_dSdWZM8UWqvTGzHE39jXNJZT00QXsLntVU">
         <Elements>
           <FullContainer>
           <GlobalStyle />
