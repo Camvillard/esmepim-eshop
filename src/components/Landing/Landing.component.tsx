@@ -65,7 +65,7 @@ export class Landing extends Component<ILandingProps, ILandingState> {
                     onOrderClick={this.orderBook}
                   />
 
-                  <ContactLine>pour toute question : allo@esmepim.com</ContactLine>
+                  <ContactLine>pour toute question : contact.pimientae@gmail.com</ContactLine>
 
                 </Fragment>
               }
