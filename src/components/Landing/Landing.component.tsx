@@ -19,61 +19,62 @@ const {
 export class Landing extends Component<ILandingProps, ILandingState> {
 
   public render() {
-    return(
+    return (
       <Fragment>
-          <LandingContainer>
-            <LandingHeader>
-              <Logo fillColor={pink} />
-              <LandingSubtitle>
-                l'idée ?
+        <LandingContainer>
+          <LandingHeader>
+            <Logo fillColor={pink} />
+            <LandingSubtitle>
+              l'idée ?
               </LandingSubtitle>
-              <LandingText>
-                Troquer des émotions culinaires contre un petit geste pour un monde meilleur ! 
+            <LandingText>
+              Troquer des émotions culinaires contre un petit geste pour un monde meilleur !
               </LandingText>
-              <LandingSubtitle>
-                qui ? comment ?
+            <LandingSubtitle>
+              qui ? comment ?
               </LandingSubtitle>
-              <LandingText>
-                Je suis Esme, et je fais des gâteaux parce que ça rend les gens heureux. On me demande souvent de rassembler mes recettes dans un livre : c'est maintenant chose faite.
-                Les fonds récoltés à l'achat de ce livre seront reversés à une (ou plusieurs !) association qui oeuvre pour un monde meilleur : scolariation des enfants, par exemple.
-                La participation financière est tout à fait libre, et vous recevrez un email avec le livre en PDF suite à l'achat.
+            <LandingText>
+              Je suis Esme, et je fais des gâteaux parce que ça rend les gens heureux. On me demande souvent de rassembler mes recettes dans un livre : c'est maintenant chose faite.
+              Les fonds récoltés à l'achat de ce livre seront reversés à une (ou plusieurs !) association qui oeuvre pour un monde meilleur : scolariation des enfants, par exemple.
+              La participation financière est tout à fait libre, et vous recevrez un email avec le livre en PDF suite à l'achat.
               </LandingText>
-            </LandingHeader>
-          
-            <LandingCTAContainer>
-              {this.props.orderIsInitiated ?
-                <Payment
-                  amount={this.props.amount}
-                  userEmail={this.props.userEmail}
-                  onAmountInputBlur={(event: any) => this.props.setAmount(parseInt(event.target.value, 10))}
-                  setOrderSuccess={this.props.setOrderSuccess}
-                /> :
-                <Fragment>
-                  <Input
-                    onInputBlur={this.props.onEmailInput}
-                    label={"adresse email :"}  
-                  />
-                  <Input
-                    onInputBlur={this.props.onAmountInputBlur}
-                    label={"participation volontaire ($ CAD) :"}  
-                  />
-                  
-                  <Button
-                    display={'block'}
-                    href={'#'}
-                    content={'commander le livre'}
-                    onOrderClick={this.orderBook}
-                  />
+          </LandingHeader>
 
-                  <ContactLine>pour toute question : contact.pimientae@gmail.com</ContactLine>
+          <LandingCTAContainer>
+            {this.props.orderIsInitiated ?
+              <Payment
+                amount={this.props.amount}
+                userEmail={this.props.userEmail}
+                onAmountInputBlur={(event: any) => this.props.setAmount(parseInt(event.target.value, 10))}
+                setOrderSuccess={this.props.setOrderSuccess}
+              /> :
+              <Fragment>
+                <Input
+                  onInputBlur={this.props.onEmailInput}
+                  label={"adresse email :"}
+                />
+                <Input
+                  onInputBlur={this.props.onAmountInputBlur}
+                  label={"participation volontaire ($ CAD) :"}
+                />
 
-                </Fragment>
-              }
+                <Button
+                  display={'block'}
+                  href={'#'}
+                  content={'commander le livre'}
+                  onOrderClick={this.orderBook}
+                />
 
-            </LandingCTAContainer>
-          </LandingContainer>
+                <ContactLine>pour toute question : all@esmepim.com</ContactLine>
+
+              </Fragment>
+            }
+
+          </LandingCTAContainer>
+        </LandingContainer>
       </Fragment>
-    )}
+    )
+  }
 
   private orderBook = () => {
     if (!this.props.userEmail) {
